@@ -1,0 +1,38 @@
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+	padding-top: 15px;
+}
+#imgType2 {
+	border-radius: 100%;
+	height: 200px;
+}
+
+body {
+	text-align: center;
+	font-family: 'Sedgwick Ave', cursive;
+	background-color: white;
+	margin: 0;
+}
+
+.top-container {
+  text-align: center;
+	margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+.header {
+  padding: 10px;
+  text-align: center;
+  background: white;
+  font-size: 10px;
+  width: 100%;
+	border-top: 4px solid black;
+	border-bottom: 4px solid black;
+	font-family: 'Sedgwick Ave', cursive;
+}

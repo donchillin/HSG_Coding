@@ -1,68 +1,97 @@
 <!DOCTYPE html>
 <html>
-<div class="header" style="line-height: 4">
-  <h1  class = "columns2">
-  	<p><a href="https://imgbb.com/"><img src="https://res.cloudinary.com/dmxlh4nza/image/upload/v1555315028/noun_Cocktail_2403819_FF9C34.png" alt="Campus-App-logo-02" border="0" style="width: 70px; height: 90px"></a></p>
-  	<p>Who we are</p>
-  	<div>
-    <p>Our Cocktails</p>
-    </div>
-    <p> Contact us</p>
-
-    <p> Our bars</p>
-
-</div>
 <head>
-	<title>My first webpage</title>
-	 <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Montserrat">
-     
-     <link rel="stylesheet" type="text/css" href="coktails.css">
-    <style id = "grad1">
-      body {
-        font-family:'Montserrat', sans-serif;
-        font-size: 40px;
-      }
-     </style>
+	<title>Main Page</title>
+	   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton&display=swap">
+     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <link rel="stylesheet" type="text/css" href="maincoktails.css">
+		 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
 </head>
 
 <body>
-	  <script>src="https://code.jquery.com/jquery-3.2.1.js"
-     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-     crossorigin="anonymous"></script>
-	<h1 id="maintitle" class="maintitle" style="font-size: 30px">Drink responsibly</h1>
-	<section class="black" id="aboutme">
-		<body>
-		<h3> </h3>
-		<h3> </h3>
-		<h2 style="font-size: 55px">"The library of exotic gins" <style id = "foo2"></style></h2>
-		<img style="height: 400px" id= "subtitle 2" src="https://dsvsbigncb06y.cloudfront.net/site/diving/fiji/liveaboard-fiji-tropical-island-xxl.jpg">
+<section> <!--Top Page -->
+    <div class="top-container">
+       <img style="height: 150px;" src="https://static1.squarespace.com/static/5b396a895417fc3deee33a9e/t/5b5272146d2a73038b3ad570/1553313995252/">
+    </div>
+    <div id="mainheader" class="header">
+       <h1 class = "row" style="line-height:1.1">
+       	 <div id="maintabs" class="col-sm-3"><a href="/Users/endribrovina/Documents/GitHub/HSG_Coding/secondpage.html">Who we are</a></div>
+         <div id="maintabs" class="col-sm-3">Cocktails</div>
+         <div id="maintabs" class="col-sm-3">Contact us</div>
+         <div id="maintabs" class="col-sm-3"><a href="#BARS">Our bars</a></div>
+    </div>
+</section>
 
-		<h2>Our product<style id = "foo2"></style>
-			<h3></h3>
-			<h3></h3>
-			<img src="https://cdn.images.express.co.uk/img/dynamic/14/590x/secondary/156469.jpg">
-			<style type ="spacing">
-			</style></h2>
-		<body><div id = "description" style="font-size: 30px">
-			See our collection
-			</div>	
-		</body>
-		<div class="popup-overlay">
+<section> <!--Main Content -->
+	  <div class="content">
+
+		<div>
+		<h2 id="title" style="font-size: 120px; padding-top:50px">"The library of Gin"</h2>
+		<img style="width: 80%; padding-top:50px; " src="https://assets.epicurious.com/photos/59e63c79ea6aa26040351f34/16:9/w_1280%2Cc_limit/GIFT-GUIDE-2017-Koval-Dry-Gin-Viva-XXX-Tequila-NIkka-Coffee-Grain-Whiskey.gif">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas rhoncus efficitur. Donec justo ante, ultricies non ligula in, sollicitudin facilisis nisi. Etiam tempor, eros sed dapibus fringilla, ante mauris cursus velit, ut facilisis tortor diam sit amet leo. Praesent sit amet ligula sodales, convallis purus eget, aliquam ex. Praesent quis urna gravida, vehicula leo eu, malesuada lectus. Nullam ut porttitor nisi, ut tempus velit. Morbi fringilla interdum dapibus.>
+    </div>
+
+    <div>
+    <h2 id = "title" style="padding-top:50px; padding-bottom:25px">Our Cocktail</h2>
+    <p style="padding-bottom:25px">The world famous <b>A+ GIN TONIC</b></p>
+
+      <div class="tab">
+      <button class="tablinks" onmouseover="openCity(event, 'Gin Tonic')">How To</button>
+      <button class="tablinks" onmouseover="openCity(event, 'Ingredients')">Ingredients</button>
+      <button class="tablinks" onmouseover="openCity(event, 'G&T Ratio')">G&T Ratio</button>
+      </div>
+
+      <div id="Gin Tonic" class="tabcontent">
+      <h3><b>HOW TO MAKE A GIN AND TONIC</b></h3>
+      <p>Classic G&T ingredients are just these four. However, feel free to mix-up, spice-up, or sweeten-up your drink with all your favorites.</p>
+      </div>
+
+		  <div id="Ingredients" class="tabcontent">
+      <h3><b>Ingredients</b></h3>
+      <p>Gin</p><p>Tonic Water</p>
+      <p>Fresh Lime Wedges</p>
+      </div>
+
+      <div id="G&T Ratio" class="tabcontent">
+      <h3><b>G&T Ratio</b></h3>
+      <p>I don’t care what anyone in this world says, this is not an exact science.
+      That said, don’t start dumping. If you’ve never made a gin and tonic before, I highly recommend a ratio of 2:5.DON'T FORGET TO ADD ICE!</p>
+      </div>
+
+      <div class="clearfix"></div>
+    </div>
+
+    <div><h2>Our Gin Recommendations</h2>
+    <h1 class = "row" style="line-height:1.1">
+      <div class="col-sm-3">Hendriks</div>
+      <div class="col-sm-3">Bombay Saphirre</div>
+      <div class="col-sm-3">Gin 27</div>
+      <div class="col-sm-3">Monkey 47</div>
+    </div>
+
+		</div>
+</section>
+
+<section> <!--JQuery Popup -->
+
+    <div id = "description" style="font-size: 30px">See our collection</div>
+    <div class="popup-overlay">
 			<!--Creates the popup content-->
 			 <div class="popup-content">
 				<h2>Pop-Up</h2>
 				<p> This is an example pop-up that you can make using jQuery.</p>
 			   <!--popup's close button-->
-				<button class="close">Close</button>    
+				<button class="close">Close</button>
 			</div>
-			</div>
-			
 			<h2>jQuery Pop-Up Example</h2>
 			<button class="open">Open</button>
-	</section>
-	
-	<section id = "description">
+		</div>
+
+</section>
+
+<section id = "description"> <!-- Description -->
 		<h2>The Advantages:</h2>
 		<ol>
 			<ul>Keeps you smiling</ul>
@@ -72,21 +101,20 @@
 		<p id="bbb" style="font-size: 20px; text-align: center;">See more on: <a href="https://cocktails.io">Cocktails</a>.</p>
 	</section>
 
+<section id="BARS" class="black" style = "color: white">
+		<h2 id="MAPTitle">Find our bars</h2>
 
-	<section class="black" style = "color: white">
-		<h2>Find our bars</h2>
-		
 			<h3>Our bar St Gallen</h3>
 							<!--The div element for the map -->
 							<div id="map">
-								
+
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2698.569632576602!2d9.388992615624717!3d47.43983457917399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479b1e673ca0437d%3A0xcf29d723e249f319!2sLanggasse+85%2C+9008+St.+Gallen%2C+Suisse!5e0!3m2!1sfr!2ses!4v1547051963879" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 							</div>
 							<!-- Replace the value of the key parameter with your own API key. -->
 			<h3>Our bar in Geneva</h3>
 
-							<div id="map">	
+							<div id="map">
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2762.0880352211543!2d6.149963715473596!3d46.18880677911619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c7acf0ca5704b%3A0x2da06cd0e42aa2e7!2sChemin+des+Cr%C3%AAts-de-Champel+2%2C+1206+Gen%C3%A8ve%2C+Suisse!5e0!3m2!1sfr!2ses!4v1547052245247" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
 							</div>
 			<h3>Our bar in New York</h3>
@@ -94,15 +122,45 @@
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.9298416118436!2d-73.96476138471053!3d40.80753547932165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f63e96d30dc9%3A0x577933f947e52750!2sUniversit%C3%A9+Columbia!5e0!3m2!1sfr!2ses!4v1547052509950" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
 							</div>
 			<img alt="" class="private-image" src="//static.hsappstatic.net/conversations-internal-components/static-1.3652/img/visitor-widget/launcher-open-icon.svg">
+	</section> <!--Google part -->
 
-		
-	</section>
+<script>
+window.onscroll = function() {myFunction()};
 
+var header = document.getElementById("mainheader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+<script> // Tabs
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
 
 </body>
 
-
 <footer style = "color: black; background-color: white; line-height: 3; font-size: 30px; padding-top: 2em">
 	<p><a class="button" href="http://www.cocktails.io/"> Click on this button to go to the website of our main company: Cocktail.com</a></p>
-	<p style="font-size: 20px; margin-bottom: 0;">Call us at the following number <a href="+41787457650">+41 78 745 76 50</a></p>	
-	</footer></html>
+	<p style="font-size: 20px; margin-bottom: 0;">Call us at the following number <a href="+41787457650">+41 78 745 76 50</a></p>
+	</footer>
+  <img id="imgType2" src="https://cdn.dribbble.com/users/1708903/screenshots/6116141/gin_tonic_dribilll.gif">
+
+  </html>
