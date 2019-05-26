@@ -129,7 +129,7 @@ p {
 }
 
 .sticky + .content {
-  padding-top: 102px;
+  padding-top: 102px !important;
 }
 
 .popup-overlay {
