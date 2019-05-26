@@ -49,5 +49,5 @@ p {
 }
 
 .sticky + .content {
-  padding-top: 160px;
+  padding-top: 110px;
 }

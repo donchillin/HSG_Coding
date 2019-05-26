@@ -39,7 +39,7 @@ body {
 }
 
 #maintabs {
-	color: black !important;
+	color: black;
 	-webkit-transition: color 1s;
   transition: color 1s;
 	}
@@ -122,6 +122,10 @@ p {
   padding-top: 1px;
 }
 
+.content {
+  padding-top: 10px;
+}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -129,12 +133,8 @@ p {
 }
 
 .sticky + .content {
-  padding-top: 102px !important;
+  padding-top: 110px;
 }
-
-.popup-overlay {
-	visibility:hidden;
-	}
 
 .popup-content {visibility:hidden;}
 
