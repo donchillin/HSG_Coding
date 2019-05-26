@@ -27,7 +27,7 @@ p {
 	margin-top: 10px;
 }
 
-#navbar {
+.header {
   padding: 10px;
   text-align: center;
   background: white;
@@ -37,7 +37,7 @@ p {
 	border-bottom: 4px solid black;
 	font-family: 'Sedgwick Ave', cursive;
 }
-
+/* The three next elements add a fixed position to the navigation bar */
 .content {
   padding-top: 10px;
 }
@@ -55,7 +55,7 @@ p {
 footer {
 	border-top: 4px solid darkgray;
 }
-
+/* The two next elements make the navbar selectors href black + gold when hover */
 a {
 	color: black;
 	-webkit-transition: color 1s;

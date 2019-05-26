@@ -13,8 +13,8 @@
   <div class="top-container"> <!--Header of the page-->
     <img style="height: 150px;" src="https://static1.squarespace.com/static/5b396a895417fc3deee33a9e/t/5b5272146d2a73038b3ad570/1553313995252/">
   </div>
-     <div id="navbar" class="header">
-       <h1 class = "row" style="line-height:1.1">
+     <div id="mainheader" class="header">
+       <h1 class = "row" style="line-height:1.1"> <!--Bootstrap divides the bar in 4 + Different Pages-->
          <div id="maintabs" class="col-sm-3"><a href="/Users/endribrovina/Documents/GitHub/HSG_Coding/coktails.html">Who we are</a></div>
          <div id="maintabs" class="col-sm-3"><a href="/Users/endribrovina/Documents/GitHub/HSG_Coding/secondpage.html">Cocktail</a></div>
          <div id="maintabs" class="col-sm-3"><a href="/Users/endribrovina/Documents/GitHub/HSG_Coding/contactus.html">Contact us</a></div>
@@ -22,7 +22,7 @@
      </div>
 
 <div class="content">
-<section> <!--Main Content of the page -->
+<section> <!--Main Content of the page (Text + pictures) -->
      		<div>
      		<h2 id="title" style="font-size: 120px; padding-top:50px">"The Cocktail"</h2>
      		<img style="width: 80%; padding-top:50px; " src="https://s3.eu-west-1.amazonaws.com/beefeater.com/stage/basic_uploads/sir-trevor/st-block-6-1534511163287-raw_625x898.gif">
@@ -38,17 +38,17 @@
 </div>
 
 <!--Header scrolling function-->
-<script>
+<script> // Fixes the Navigation bar at the top of the page
 window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+var header = document.getElementById("mainheader");
+var sticky = header.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+    header.classList.add("sticky")
   } else {
-    navbar.classList.remove("sticky");
+    header.classList.remove("sticky");
   }
 }
 </script>

@@ -2,7 +2,7 @@
 <html>
 <head> <!--Sources-->
 
-	<title>Main Page</title>
+	<title>Main Page</title> <!--Linking of Bootstrap, path of CSS file and fonts-->
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton&display=swap">
      <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave&display=swap" rel="stylesheet">
      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -11,11 +11,11 @@
 </head>
 
 <body>
-    <div class="top-container"> <!--Top Page - Navbar -->
+    <div class="top-container"> <!--Top Page - Navigation Bar -->
        <img style="height: 150px;" src="https://static1.squarespace.com/static/5b396a895417fc3deee33a9e/t/5b5272146d2a73038b3ad570/1553313995252/">
     </div>
     <div id="mainheader" class="header">
-       <h1 class = "row" style="line-height:1.1">
+       <h1 class = "row" style="line-height:1.1"> <!--Bootstrap divides the bar in 4 + Different Pages-->
        	 <div id="maintabs" class="col-sm-3"><a href="/Users/endribrovina/Documents/GitHub/HSG_Coding/cocktails.html">Who we are</a></div>
          <div id="maintabs" class="col-sm-3"><a href="/Users/endribrovina/Documents/GitHub/HSG_Coding/secondpage.html">Cocktail</a></div>
          <div id="maintabs" class="col-sm-3"><a href="/Users/endribrovina/Documents/GitHub/HSG_Coding/contactus.html">Contact us</a></div>
@@ -34,13 +34,13 @@
     <h2 id = "title" style="padding-top:50px; padding-bottom:25px">Our Cocktail</h2>
     <p style="padding-bottom:25px">The world famous <b>A+ GIN TONIC</b></p>
 
-      <div class="tab">
+      <div class="tab"> <!-- This part integrates tabs with the help of JS -->
       <button class="tablinks" onmouseover="openCity(event, 'Gin Tonic')">How To</button>
       <button class="tablinks" onmouseover="openCity(event, 'Ingredients')">Ingredients</button>
       <button class="tablinks" onmouseover="openCity(event, 'G&T Ratio')">G&T Ratio</button>
       </div>
 
-      <div id="Gin Tonic" class="tabcontent">
+      <div id="Gin Tonic" class="tabcontent"> <!-- Different Tabs-->
       <h3><b>HOW TO MAKE A GIN AND TONIC</b></h3>
       <p>Classic G&T ingredients are just these four. However, feel free to mix-up, spice-up, or sweeten-up your drink with all your favorites.</p>
       </div>
@@ -60,7 +60,7 @@
       <div class="clearfix"></div>
     </div>
 
-    <div><h2>Our Gin Recommendations</h2>
+    <div><h2>Our Gin Recommendations</h2> <!-- Another bootstrap-->
     <h1 class = "row" style="line-height:1.1">
       <div class="col-sm-3">Hendriks</div>
       <div class="col-sm-3">Bombay Saphirre</div>
@@ -70,7 +70,7 @@
 </section>
 </div>
 
-<section> <!--JQuery Popup -->
+<section> <!--JQuery Popup: The number grows when the mouse is moved over -->
 
     <div id = "description" style="font-size: 30px;">See our collection</div>
         <meta charset="UTF-8">
@@ -121,7 +121,7 @@
   </div>
 </section>
 
-<script>
+<script> // Fixes the Navigation bar at the top of the page
 window.onscroll = function() {myFunction()};
 
 var header = document.getElementById("mainheader");
