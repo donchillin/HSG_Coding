@@ -197,3 +197,7 @@ p {
 .col-sm-3{
  position: inherit
 }
+
+footer {
+	border-top: 4px solid darkgray;
+}
