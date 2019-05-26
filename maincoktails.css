@@ -38,12 +38,13 @@ body {
 	font-family: 'Sedgwick Ave', cursive;
 }
 
-#maintabs {
+a {
 	color: black;
 	-webkit-transition: color 1s;
   transition: color 1s;
 	}
-#maintabs:hover {
+
+a:hover {
   color: gold;
 }
 

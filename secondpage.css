@@ -55,3 +55,13 @@ p {
 footer {
 	border-top: 4px solid darkgray;
 }
+
+a {
+	color: black;
+	-webkit-transition: color 1s;
+  transition: color 1s;
+	}
+
+a:hover {
+  color: gold;
+}
