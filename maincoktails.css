@@ -39,7 +39,7 @@ body {
 }
 
 #maintabs {
-	color: black;
+	color: black !important;
 	-webkit-transition: color 1s;
   transition: color 1s;
 	}
