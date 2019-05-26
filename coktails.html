@@ -2,12 +2,11 @@
 <html>
 <head>
 	<title>Main Page</title>
-	   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton&display=swap">
      <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave&display=swap" rel="stylesheet">
      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
      <link rel="stylesheet" type="text/css" href="maincoktails.css">
-		 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
 </head>
 
 <body>
@@ -82,40 +81,24 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="./lib/jquery-3.3.1.min.js"></script>
         <script type="text/javascript">
-    
-            // This is a global variable that defines the number font size.
-            let number_size = 10;
-            
-            // $(function(){......}) equals to $(document).ready(function(){.....}) and jQuery(document).ready(function(){......})
+            let number_size = 10;  
+          
             $(function(){
-    
-                // Set the html p tag style with css method. $ is an alias of jQuery.
+ 
                 $('h5').css({color: 'blue', padding: '10px'});
-    
-                // Set div css style, the div's id is add_number.
+                
                 $('#add_number').css({
                     margin: '5 auto',
                     backgroundColor: 'black',
                     textAlign: 'center',
                     fontSize: '40px'
                 })
-    
-                // Bind mousemove event to the selected add_number div object.
-                // When user mouse move in add_number div then execute the function.
+
                 $('#add_number').bind('mousemove', function(){
-                    // Get current add_number div text and parse it to integer, default value is 5.
                     var current_number = parseInt($(this).text(), 10);
-    
-                    // Add 1 to the number font size.
                     number_size = number_size + 1;
-    
-                    // Increase 2 for current number.
                     current_number = current_number + 2;
-    
-                    // Set new value for current number in the div text.
                     $(this).text(current_number);
-    
-                    // Set the number font size with css.
                     $(this).css({color: 'white', fontSize: number_size+'px'})
                 });
             });
